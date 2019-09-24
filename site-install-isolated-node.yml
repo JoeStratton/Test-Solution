@@ -30,7 +30,7 @@
         controller=tower
       state: present
     when: setup_tower == "yes"
-	
+    
   - name: Run Ansible Tower setup
     shell: /root/ansible-tower-setup-3.2.8/setup.sh
     async: 3600
