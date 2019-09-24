@@ -11,6 +11,7 @@
     name:
       - python-pip
       - gcc
+    state: latest
 - name: Install openstacksdk library
   pip:
     name: openstacksdk
