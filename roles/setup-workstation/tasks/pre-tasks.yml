@@ -12,6 +12,7 @@
       - python-pip
       - gcc
     state: latest
+    skip_broken: yes
 - name: Install openstacksdk library
   pip:
     name: openstacksdk
