@@ -7,11 +7,13 @@
       file:
         path: /root/bin
         state: directory
+      tags: test_debug
     - name: get script common.sh
       get_url:
         url: "{{ param_repo_base }}/scripts/common.sh"
         dest: /root/common.sh
         mode: 0755
+      tags: test_debug
 
     - name: get script jq
       get_url: 
